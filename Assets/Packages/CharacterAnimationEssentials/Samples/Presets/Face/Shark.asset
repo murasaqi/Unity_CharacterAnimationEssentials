@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfccdc464dbc81d41b26d127addd0bca, type: 3}
+  m_Name: Shark
+  m_EditorClassIdentifier: 
+  faceType: 9
+  facialName: Shark
+  value: 0
+  targetBlendshapePairs:
+  - Name: sameru_blendshape.Eye_jitome1
+    isMouth: 0
+    MaxValue: 100
+  - Name: sameru_blendshape.Mouth_shark
+    isMouth: 0
+    MaxValue: 100
+  - Name: sameru_blendshape.Eyeblow_down
+    isMouth: 0
+    MaxValue: 100
