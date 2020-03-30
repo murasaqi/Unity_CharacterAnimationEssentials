@@ -12,10 +12,10 @@ namespace CharacterAnimationEssentials.Facial
 
         [SerializeField] SkinnedMeshRenderer faceSkin;
 
-        [SerializeField] List<FacialExpression> facialExpressionList;
+        [SerializeField] List<FacialExpressionPreset> facialExpressionList;
 
 
-        Dictionary<FaceType, FacialExpression> facialExpressionDict = new Dictionary<FaceType, FacialExpression>();
+        Dictionary<FaceType, FacialExpressionPreset> facialExpressionDict = new Dictionary<FaceType, FacialExpressionPreset>();
 
         Mesh faceMesh;
 
@@ -49,7 +49,7 @@ namespace CharacterAnimationEssentials.Facial
 
 
 
-        public FacialExpression GetFacialExpression(FaceType faceType)
+        public FacialExpressionPreset GetFacialExpression(FaceType faceType)
         {
 
             try
