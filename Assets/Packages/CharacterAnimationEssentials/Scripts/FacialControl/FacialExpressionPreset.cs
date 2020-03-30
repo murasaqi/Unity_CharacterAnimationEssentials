@@ -6,7 +6,7 @@ namespace CharacterAnimationEssentials.Facial
 {
 
     [CreateAssetMenu(menuName = "ProjectBLUE/Create Facial Expression Preset")]
-    public class FacialExpression : ScriptableObject
+    public class FacialExpressionPreset : ScriptableObject
     {
 
         public FaceType faceType = FaceType.Default;
