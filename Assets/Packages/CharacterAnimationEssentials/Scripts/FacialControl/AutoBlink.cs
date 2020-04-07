@@ -75,6 +75,9 @@ namespace CharacterAnimationEssentials.Facial
             }
         }
 
+        [HideInInspector]
+        public float blinkOverrider = 0;
+
         [SerializeField]
         BlinkShape[] blinkShapes;
 
@@ -116,6 +119,8 @@ namespace CharacterAnimationEssentials.Facial
         private void OnEnable()
         {
             ResetBlinking();
+
+            blinkOverrider = 0;
         }
 
         private void OnDisable()
@@ -131,6 +136,11 @@ namespace CharacterAnimationEssentials.Facial
             isPreviousAvoided = isAvoided;
 
             if (isAvoided)
+            {
+                return;
+            }
+
+            if (BlinkOverride())
             {
                 return;
             }
@@ -206,6 +216,22 @@ namespace CharacterAnimationEssentials.Facial
 
             onBlinkUpdate = OnBlinkOpened;
             transitionTime = Time.time;
+        }
+
+        bool BlinkOverride()
+        {
+            if(blinkOverrider > 0)
+            {
+                foreach (var shape in blinkShapes)
+                {
+                    shape.skinnedMeshRenderer.SetBlendShapeWeight(shape.index, blinkOverrider);
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         bool IsAvoidedShapesWeighted()
