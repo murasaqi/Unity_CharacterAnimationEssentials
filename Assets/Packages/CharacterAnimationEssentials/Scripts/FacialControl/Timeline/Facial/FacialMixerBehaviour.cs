@@ -50,7 +50,7 @@ namespace CharacterAnimationEssentials.Facial
                 var behaviour = clipAsset.behaviour;
                 var clipWeight = playable.GetInputWeight(i);
 
-                var facialExpression = binding.GetFacialExpression(behaviour.faceType);
+                var facialExpression = behaviour.preset;
                 if (!facialExpression) continue;
 
                 foreach (var pair in facialExpression.targetBlendshapePairs)

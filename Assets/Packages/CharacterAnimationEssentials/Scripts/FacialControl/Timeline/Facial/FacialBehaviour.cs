@@ -8,8 +8,8 @@ namespace CharacterAnimationEssentials.Facial
     public class FacialBehaviour : PlayableBehaviour
     {
 
-        public FaceType faceType = FaceType.Default;
-
+        // public FaceType faceType = FaceType.Default;
+        public FacialExpressionPreset preset;
         [Range(0f, 1f)]
         public float strengthMultiplier = 1f;
 

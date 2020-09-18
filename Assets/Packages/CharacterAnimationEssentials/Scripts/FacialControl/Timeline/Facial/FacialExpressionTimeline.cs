@@ -49,20 +49,20 @@ namespace CharacterAnimationEssentials.Facial
 
 
 
-        public FacialExpressionPreset GetFacialExpression(FaceType faceType)
-        {
-
-            try
-            {
-                return facialExpressionDict[faceType];
-            }
-            catch (Exception e)
-            {
-                Debug.LogWarning($"There is no such face type : {faceType} or {e.ToString()}");
-                return null;
-            }
-
-        }
+        // public FacialExpressionPreset GetFacialExpression()
+        // {
+        //
+        //     try
+        //     {
+        //         return facialExpressionDict[faceType];
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         Debug.LogWarning($"There is no such face type : {faceType} or {e.ToString()}");
+        //         return null;
+        //     }
+        //
+        // }
 
         void ConvertListToDict()
         {
