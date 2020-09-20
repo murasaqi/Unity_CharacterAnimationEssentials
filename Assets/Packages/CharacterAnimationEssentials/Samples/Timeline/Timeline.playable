@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Smile
+    m_DisplayName: Shark (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
   - m_Version: 1
     m_Start: 1.5666666666666667
     m_ClipIn: 0
@@ -1033,7 +1033,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Special1
+    m_DisplayName: Smile (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
   - m_Version: 1
     m_Start: 4.183333333333334
     m_ClipIn: 0
@@ -1066,7 +1066,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Special2
+    m_DisplayName: Wink (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
   - m_Version: 1
     m_Start: 5.333333333333333
     m_ClipIn: 0
@@ -1117,7 +1117,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Default
+    m_DisplayName: Shark (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
@@ -1150,7 +1150,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Default
+    m_DisplayName: Default (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
   m_Markers:
     m_Objects: []
 --- !u!114 &-1886921105030115246

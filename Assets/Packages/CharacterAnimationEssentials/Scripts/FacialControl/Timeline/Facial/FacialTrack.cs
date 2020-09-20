@@ -23,7 +23,7 @@ namespace CharacterAnimationEssentials.Facial
             {
                 var clipAsset = clip.asset as FacialClip;
                 var behaviour = clipAsset.behaviour;
-                clip.displayName = behaviour.preset.ToString();
+                clip.displayName = behaviour.preset.name;
             });
 
             return mixer;
