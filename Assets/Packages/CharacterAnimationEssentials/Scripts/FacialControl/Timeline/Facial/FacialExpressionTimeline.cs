@@ -12,7 +12,7 @@ namespace CharacterAnimationEssentials.Facial
 
         [SerializeField] SkinnedMeshRenderer faceSkin;
 
-        [SerializeField] List<FacialExpressionPreset> facialExpressionList;
+        // [SerializeField] List<FacialExpressionPreset> facialExpressionList;
 
 
         Dictionary<FaceType, FacialExpressionPreset> facialExpressionDict = new Dictionary<FaceType, FacialExpressionPreset>();
@@ -68,43 +68,43 @@ namespace CharacterAnimationEssentials.Facial
         {
             facialExpressionDict.Clear();
 
-            facialExpressionList.ForEach(facialExpression =>
-            {
-                try
-                {
-                    facialExpressionDict.Add(facialExpression.faceType, facialExpression);
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError($"Check if there is same face type in the list : {facialExpression.faceType}. or {e.ToString()}");
-                }
-
-            });
+            // facialExpressionList.ForEach(facialExpression =>
+            // {
+            //     try
+            //     {
+            //         facialExpressionDict.Add(facialExpression.faceType, facialExpression);
+            //     }
+            //     catch (Exception e)
+            //     {
+            //         Debug.LogError($"Check if there is same face type in the list : {facialExpression.faceType}. or {e.ToString()}");
+            //     }
+            //
+            // });
         }
 
         // Calculate each blendshape index inside of facial expression scriptable object
         void ResolveAllBlendShapeIndexes()
         {
-            facialExpressionList.ForEach(facialExpression =>
-            {
-
-
-                facialExpression.targetBlendshapePairs.ForEach(target =>
-                {
-
-                    var index = faceMesh.GetBlendShapeIndex(target.Name);
-
-                    if (index == -1)
-                    {
-                        target.Index = 0;   // for use error detection
-
-                        Debug.LogError($"{facialExpression.name} : {target.Name} is not found");
-                    }
-
-                    target.Index = index;
-                });
-
-            });
+            // facialExpressionList.ForEach(facialExpression =>
+            // {
+            //
+            //
+            //     facialExpression.targetBlendshapePairs.ForEach(target =>
+            //     {
+            //
+            //         var index = faceMesh.GetBlendShapeIndex(target.Name);
+            //
+            //         if (index == -1)
+            //         {
+            //             target.Index = 0;   // for use error detection
+            //
+            //             Debug.LogError($"{facialExpression.name} : {target.Name} is not found");
+            //         }
+            //
+            //         target.Index = index;
+            //     });
+            //
+            // });
         }
 
     }
