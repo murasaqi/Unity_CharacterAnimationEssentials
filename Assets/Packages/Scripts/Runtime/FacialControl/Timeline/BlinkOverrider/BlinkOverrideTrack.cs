@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Playables;
+﻿
 using UnityEngine.Timeline;
 using System.Linq;
+using UnityEngine;
+using UnityEngine.Playables;
 
 namespace CharacterAnimationEssentials.Facial
 {
