@@ -47,7 +47,7 @@ namespace CharacterAnimationEssentials.Facial
 
         public void SetBlendshapeWeightAt(int index, float value)
         {
-            Debug.Log($"{index},{value}");
+            // Debug.Log($"{index},{value}");
             // var index = faceMesh.GetBlendShapeIndex(targetName);
             if (faceSkin)
                 faceSkin.SetBlendShapeWeight(index, value);

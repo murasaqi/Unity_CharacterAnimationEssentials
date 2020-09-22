@@ -55,7 +55,7 @@ namespace CharacterAnimationEssentials.Facial
 
                 foreach (var pair in facialExpression.targetBlendshapePairs)
                 {
-                    Debug.Log(pair);
+                    // Debug.Log(pair);
                     blendshapeValues[binding.GetIndexByName(pair.Name)] += pair.MaxValue * behaviour.strengthMultiplier * clipWeight;
                 }
 
