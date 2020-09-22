@@ -1,10 +1,8 @@
 {
-  "name": "jp.pjPurple.characteranimationessentials_modified",
-  "displayName": "CharacterAnimationEssentials",
-  "version": "1.0.0",
-  "unity": "2019.3",
-  "description": "Character expression and hand timeline control.",
-  "license": "MIT",
-  "dependencies": {
-  }
+	"name": "jp.pjPurple.UnityCharacterAnimationEssentials",
+	"version": "0.0.1",
+	"unity": "2019.3",
+	"description": "UnityCharacterAnimationEssentials",
+	"dependencies": {
+	}
 }
