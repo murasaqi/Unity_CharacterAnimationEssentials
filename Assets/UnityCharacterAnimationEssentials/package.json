@@ -1,8 +1,7 @@
 {
-	"name": "jp.pjPurple.UnityCharacterAnimationEssentials",
-	"version": "0.0.1",
-	"unity": "2019.3",
-	"description": "UnityCharacterAnimationEssentials",
-	"dependencies": {
-	}
+	"name": "com.unity.character-animation-essentials-package", 
+	"displayName": "UnityCharacterAnimationEssentials",
+	"version": "1.0.0",              
+	"unity": "2019.3",                
+	"description": "説明分"
 }
