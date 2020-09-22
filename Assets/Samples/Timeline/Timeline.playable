@@ -59,40 +59,7 @@ MonoBehaviour:
   m_Curves: {fileID: 0}
   m_Parent: {fileID: -8876891012467700073}
   m_Children: []
-  m_Clips:
-  - m_Version: 1
-    m_Start: 5.833333333333333
-    m_ClipIn: 0
-    m_Asset: {fileID: 1693319661340116232}
-    m_Duration: 0.6666666666666667
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8647920426128459629}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Close
+  m_Clips: []
   m_Markers:
     m_Objects: []
 --- !u!114 &-8631744343730757696
@@ -119,6 +86,22 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
+--- !u!114 &-8282363601670741485
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
+  m_Name: FacialClip
+  m_EditorClassIdentifier: 
+  behaviour:
+    preset: {fileID: 11400000, guid: d10305f2e1755424b88309812ee04d17, type: 2}
+    strengthMultiplier: 1
+    useMouth: 0
 --- !u!114 &-7338174245287993518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -445,7 +428,7 @@ MonoBehaviour:
     m_DisplayName: Rock (CharacterAnimationEssentials.Hand.HandPreset)
   m_Markers:
     m_Objects: []
---- !u!114 &-5569190614584519515
+--- !u!114 &-5001892286862568043
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,10 +438,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
-  m_Name: FacialClip(Clone)
+  m_Name: FacialClip
   m_EditorClassIdentifier: 
   behaviour:
-    preset: {fileID: 11400000, guid: d10305f2e1755424b88309812ee04d17, type: 2}
+    preset: {fileID: 11400000, guid: c1c8acba6fe3376419ec03d8a83abc92, type: 2}
     strengthMultiplier: 1
     useMouth: 0
 --- !u!114 &-4967507738795592479
@@ -519,25 +502,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -564,49 +529,13 @@ MonoBehaviour:
     m_BlendOutDuration: 0.18333333333333313
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -633,49 +562,13 @@ MonoBehaviour:
     m_BlendOutDuration: 0.18333333333333357
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -702,49 +595,13 @@ MonoBehaviour:
     m_BlendOutDuration: 0.3166666666666673
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -771,49 +628,13 @@ MonoBehaviour:
     m_BlendOutDuration: 0.2833333333333332
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -840,25 +661,7 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -969,19 +772,37 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0.5833333333333334
+    m_Start: 0.26666666666666666
     m_ClipIn: 0
-    m_Asset: {fileID: -656813477952633009}
-    m_Duration: 1.2000000000000002
+    m_Asset: {fileID: -8282363601670741485}
+    m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -2100164441305185703}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.1499999999999999
-    m_BlendOutDuration: 0.216666666666667
+    m_BlendInDuration: -1
+    m_BlendOutDuration: 0.4833333333333334
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1000,83 +821,17 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Shark (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
+    m_DisplayName: Shark
   - m_Version: 1
-    m_Start: 1.5666666666666667
+    m_Start: 4.783333333333333
     m_ClipIn: 0
-    m_Asset: {fileID: 4932309065937109594}
-    m_Duration: 2.8
+    m_Asset: {fileID: -5001892286862568043}
+    m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -2100164441305185703}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.216666666666667
-    m_BlendOutDuration: 0.18333333333333268
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Smile (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
-  - m_Version: 1
-    m_Start: 4.183333333333334
-    m_ClipIn: 0
-    m_Asset: {fileID: -159485244118995480}
-    m_Duration: 1.4333333333333327
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -2100164441305185703}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0.18333333333333268
-    m_BlendOutDuration: 0.2833333333333332
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Wink (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
-  - m_Version: 1
-    m_Start: 5.333333333333333
-    m_ClipIn: 0
-    m_Asset: {fileID: -5569190614584519515}
-    m_Duration: 1.3833333333333337
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -2100164441305185703}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: 0.2833333333333332
+    m_BlendInDuration: 0.4833333333333334
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1117,40 +872,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: Shark (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
-  - m_Version: 1
-    m_Start: 0
-    m_ClipIn: 0
-    m_Asset: {fileID: 1241500050779485839}
-    m_Duration: 0.7333333333333333
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -2100164441305185703}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: 0.1499999999999999
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Default (CharacterAnimationEssentials.Facial.FacialExpressionPreset)
+    m_DisplayName: Smile
   m_Markers:
     m_Objects: []
 --- !u!114 &-1886921105030115246
@@ -1176,22 +898,6 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
---- !u!114 &-656813477952633009
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
-  m_Name: FacialClip
-  m_EditorClassIdentifier: 
-  behaviour:
-    preset: {fileID: 11400000, guid: d10305f2e1755424b88309812ee04d17, type: 2}
-    strengthMultiplier: 1
-    useMouth: 0
 --- !u!114 &-205431574476333071
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1207,22 +913,6 @@ MonoBehaviour:
   behaviour:
     handPreset: {fileID: 11400000, guid: e0e6e7530d549134697954899cda1ee7, type: 2}
     strengthMultiplier: 1
---- !u!114 &-159485244118995480
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
-  m_Name: FacialClip(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  behaviour:
-    preset: {fileID: 11400000, guid: ebf29a00565ac0f41bbf82a2378f7157, type: 2}
-    strengthMultiplier: 1
-    useMouth: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,36 +965,6 @@ MonoBehaviour:
   behaviour:
     handPreset: {fileID: 11400000, guid: 6e9e11ff687cb5344971aed7f8eb97ac, type: 2}
     strengthMultiplier: 1
---- !u!114 &1241500050779485839
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
-  m_Name: FacialClip(Clone)(Clone)
-  m_EditorClassIdentifier: 
-  behaviour:
-    preset: {fileID: 11400000, guid: 38feb0a69b7f4c1409fb0f07784b40f6, type: 2}
-    strengthMultiplier: 1
-    useMouth: 0
---- !u!114 &1693319661340116232
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844221cbfefe30b42a6c1a9ca3ce0ca7, type: 3}
-  m_Name: BlinkOverrideClip
-  m_EditorClassIdentifier: 
-  behaviour:
-    easeInOutLength: 0.2
 --- !u!114 &2437714176475926775
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1344,22 +1004,6 @@ MonoBehaviour:
   behaviour:
     handPreset: {fileID: 11400000, guid: 6e9e11ff687cb5344971aed7f8eb97ac, type: 2}
     strengthMultiplier: 1
---- !u!114 &4932309065937109594
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e559fa919c0fc6439c31d7753c38151, type: 3}
-  m_Name: FacialClip(Clone)
-  m_EditorClassIdentifier: 
-  behaviour:
-    preset: {fileID: 11400000, guid: c1c8acba6fe3376419ec03d8a83abc92, type: 2}
-    strengthMultiplier: 1
-    useMouth: 0
 --- !u!114 &5941660335227008157
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfccdc464dbc81d41b26d127addd0bca, type: 3}
   m_Name: Shark
   m_EditorClassIdentifier: 
-  faceType: 9
   facialName: Shark
-  value: 0
   targetBlendshapePairs:
   - Name: sameru_blendshape.Eye_jitome1
     isMouth: 0

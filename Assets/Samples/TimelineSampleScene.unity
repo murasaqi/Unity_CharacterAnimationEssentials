@@ -390,11 +390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceSkin: {fileID: 1867770240}
-  facialExpressionList:
-  - {fileID: 11400000, guid: c1c8acba6fe3376419ec03d8a83abc92, type: 2}
-  - {fileID: 11400000, guid: ebf29a00565ac0f41bbf82a2378f7157, type: 2}
-  - {fileID: 11400000, guid: d10305f2e1755424b88309812ee04d17, type: 2}
-  - {fileID: 11400000, guid: 38feb0a69b7f4c1409fb0f07784b40f6, type: 2}
 --- !u!4 &905408859
 Transform:
   m_ObjectHideFlags: 0

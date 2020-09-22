@@ -39,7 +39,7 @@ namespace CharacterAnimationEssentials.Facial {
             {
                 if (pair.facialExpressionPreset)
                 {
-                    pair.name = pair.facialExpressionPreset.faceType.ToString();
+                    pair.name = pair.facialExpressionPreset.name;
                 }
             });
 

@@ -9,7 +9,7 @@ namespace CharacterAnimationEssentials.Facial
     public class FacialExpressionPreset : ScriptableObject
     {
 
-        public FaceType faceType = FaceType.Default;
+        // public FaceType faceType = FaceType.Default;
 
         public string facialName;
 
