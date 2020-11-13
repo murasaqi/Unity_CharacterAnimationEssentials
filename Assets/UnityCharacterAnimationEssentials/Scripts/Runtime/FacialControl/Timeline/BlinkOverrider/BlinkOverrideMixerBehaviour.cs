@@ -37,26 +37,27 @@ namespace CharacterAnimationEssentials.Facial
                 var behaviour = clipAsset.behaviour;
                 var clipWeight = playable.GetInputWeight(i);
 
+
                 var clipProgress = (float)((time - clip.start) / clip.duration);
 
                 if (clipProgress < behaviour.easeInOutLength)
                 {
                     var normalized = clipProgress / behaviour.easeInOutLength;
-                    value = QuadraticEaseInOut(normalized, 0f, 1f, 1f) * clipWeight;
+                    value += QuadraticEaseInOut(normalized, 0f, 1f, 1f) * clipWeight;
                 }
                 else if (clipProgress >= 1 - behaviour.easeInOutLength)
                 {
                     var normalized = (clipProgress - (1 - behaviour.easeInOutLength)) / behaviour.easeInOutLength;
-                    value = QuadraticEaseInOut(1 - normalized, 0f, 1f, 1f) * clipWeight;
+                    value += QuadraticEaseInOut(1 - normalized, 0f, 1f, 1f) * clipWeight;
                 }
                 else
                 {
-                    value = 1f * clipWeight;
+                    value += 1f;
                 }
 
             }
 
-            binding.blinkOverrider = value * 100;
+            binding.blinkOverrider = Mathf.Max(0, Mathf.Min(100, value * 100));
         }
 
         float QuadraticEaseInOut(float time, float startValue, float change, float duration)

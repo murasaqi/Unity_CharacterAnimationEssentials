@@ -262,6 +262,8 @@ PlayableDirector:
     value: {fileID: 905408858}
   - key: {fileID: -8647920426128459629, guid: e0693bc061d518c488f8836be7a034bf, type: 2}
     value: {fileID: 905408860}
+  - key: {fileID: -1338966478923240141, guid: e0693bc061d518c488f8836be7a034bf, type: 2}
+    value: {fileID: 905408858}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &561212751
@@ -413,7 +415,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 905408857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df1d375a3ea1c1145aee78e654513d30, type: 3}
+  m_Script: {fileID: 11500000, guid: a752ff6454895ae4a801044fd3527876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blinkOverrider: 0
@@ -440,9 +442,9 @@ MonoBehaviour:
     skinnedMeshRenderer: {fileID: 1867770240}
     index: 20
     thresholdWeight: 10
-  - name: sameru_blendshape.Eye_laugh
+  - name: sameru_blendshape.Mouth_sil
     skinnedMeshRenderer: {fileID: 1867770240}
-    index: 22
+    index: 0
     thresholdWeight: 10
   - name: sameru_blendshape.Eye_jitome1
     skinnedMeshRenderer: {fileID: 1867770240}
@@ -1013,17 +1015,17 @@ PrefabInstance:
     - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[16]
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[23]
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[25]
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2504533604204606377, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
