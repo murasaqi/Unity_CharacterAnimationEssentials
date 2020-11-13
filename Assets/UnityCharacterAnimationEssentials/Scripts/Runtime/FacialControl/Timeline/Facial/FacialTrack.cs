@@ -23,9 +23,16 @@ namespace CharacterAnimationEssentials.Facial
             {
                 var clipAsset = clip.asset as FacialClip;
                 var behaviour = clipAsset.behaviour;
+                // foreach (var blendShape in behaviour.preset.targetBlendshapePairs)
+                // {
+                //      blendShape.Index = gettra .faceMesh.GetBlendShapeIndex(blendShape.Name);
+                // }
+
+               
                 clip.displayName = behaviour.preset.name;
             });
-
+            mixer.GetBehaviour().Director = go.GetComponent<PlayableDirector>();
+            
             return mixer;
         }
 

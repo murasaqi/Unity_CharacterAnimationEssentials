@@ -13,6 +13,7 @@ namespace CharacterAnimationEssentials.Facial
         [Range(0f, 1f)]
         public float strengthMultiplier = 1f;
 
+        public float easeInOutLength = 0.2f;
         public bool useMouth = false;
 
     }

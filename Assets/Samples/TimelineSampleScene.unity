@@ -262,6 +262,8 @@ PlayableDirector:
     value: {fileID: 905408858}
   - key: {fileID: -8647920426128459629, guid: e0693bc061d518c488f8836be7a034bf, type: 2}
     value: {fileID: 905408860}
+  - key: {fileID: 2238711721404425734, guid: e0693bc061d518c488f8836be7a034bf, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &561212751
@@ -1013,7 +1015,7 @@ PrefabInstance:
     - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[16]
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}
@@ -1024,6 +1026,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[25]
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651062367082650294, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[3]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2504533604204606377, guid: 7c9a1a5fa5157d445a37617c3cb6cdee,
         type: 3}

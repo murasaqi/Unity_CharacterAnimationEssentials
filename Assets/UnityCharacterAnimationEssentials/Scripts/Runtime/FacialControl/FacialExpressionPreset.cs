@@ -12,6 +12,7 @@ namespace CharacterAnimationEssentials.Facial
         // public FaceType faceType = FaceType.Default;
 
         public string facialName;
+        public float value;
 
         public List<BlendshapeNameIndexMaxValuePair> targetBlendshapePairs;
 

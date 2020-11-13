@@ -17,7 +17,15 @@ namespace CharacterAnimationEssentials.Facial
 
         // Dictionary<string, FacialExpressionPreset> facialExpressionDict = new Dictionary<string, FacialExpressionPreset>();
 
-        Mesh faceMesh;
+        public Mesh faceMesh { get; set; }
+
+        public SkinnedMeshRenderer face => faceSkin;
+
+        // public float value;
+
+        // public FacialExpressionPreset preset;
+        // public FaceType faceType = FaceType.Default;
+        // public bool mouthEnabled = false;
 
         public int BlendshapeNum {
             get {
@@ -44,15 +52,9 @@ namespace CharacterAnimationEssentials.Facial
         {
             return faceMesh.GetBlendShapeIndex(targetName);
         }
+      
 
-        public void SetBlendshapeWeightAt(int index, float value)
-        {
-            // Debug.Log($"{index},{value}");
-            // var index = faceMesh.GetBlendShapeIndex(targetName);
-            if (faceSkin)
-                faceSkin.SetBlendShapeWeight(index, value);
-        }
-
+       
 
     }
 
