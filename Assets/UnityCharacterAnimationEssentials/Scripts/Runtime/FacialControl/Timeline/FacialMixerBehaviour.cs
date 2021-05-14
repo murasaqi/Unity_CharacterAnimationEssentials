@@ -48,7 +48,7 @@ namespace CharacterAnimationEssentials.Facial
 
             float value = 1;
             // FaceType faceType = FaceType.Default;
-            bool mouthEnabled = false;
+            // bool mouthEnabled = false;
 
             // var easeInOutLength = 0.2;
             // sum all clips

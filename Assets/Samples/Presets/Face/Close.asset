@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfccdc464dbc81d41b26d127addd0bca, type: 3}
-  m_Name: Wink
+  m_Name: Close
   m_EditorClassIdentifier: 
-  faceType: 8
-  facialName: Wink
+  faceType: 9
+  facialName: Close
   value: 1
   targetBlendshapePairs:
   - Name: sameru_blendshape.Eye_blink_left
+    isMouth: 0
+    MaxValue: 100
+  - Name: sameru_blendshape.Eye_blink_right
     isMouth: 0
     MaxValue: 100
