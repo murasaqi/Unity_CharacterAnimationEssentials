@@ -87,7 +87,10 @@ namespace CharacterAnimationEssentials.Facial
             }
 
             // binding.faceType = faceType;
-            // binding.value = value;
+            // binding.value = value;   -=
+            
+            
+            
             // binding.mouthEnabled = mouthEnabled;
         }
         
@@ -95,13 +98,13 @@ namespace CharacterAnimationEssentials.Facial
         {
             var preset = behaviour.preset;
             
-            int faceBlandshapeNum = binding.faceMesh.blendShapeCount;
-            for (int i = 0; i < faceBlandshapeNum; i++)
-            {
-                binding.face.SetBlendShapeWeight(i, 0);
-            }
+            // int faceBlandshapeNum = binding.faceMesh.blendShapeCount;        
+            // for (int i = 0; i < faceBlandshapeNum; i++)
+            // {
+            //     binding.face.SetBlendShapeWeight(i, 0);
+            // }=0=0====--==00=0=0=0=09kwakami===---==
             // Debug.Log($"<color=blue>name: {preset.name}</color>");
-            // Debug.Log($"<color=red>size: {preset.targetBlendshapePairs.Count}</color>");
+            // Debug.Log($"<color=red>size: {preset.targetBlendshapePairs.Count}</color>");==-8888===---    
             var count = 0;
 
             foreach (var blendShape in  preset.targetBlendshapePairs)
