@@ -93,7 +93,7 @@ namespace CharacterAnimationEssentials.Facial
 
             if (!isOnClip)
             {
-                ResetFace();
+                // ResetFace();
             }
             // binding.faceType = faceType;
             // binding.value = value;   -=
@@ -146,7 +146,7 @@ namespace CharacterAnimationEssentials.Facial
                     }
                     else
                     {
-                        binding.face.SetBlendShapeWeight(blendShape.Index, 0f);
+                        // binding.face.SetBlendShapeWeight(blendShape.Index, 0f);
                     }
                 }
                 else
