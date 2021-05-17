@@ -46,12 +46,8 @@ namespace CharacterAnimationEssentials.Facial
 
             var time = Director.time;
 
-            float value = 1;
-            // FaceType faceType = FaceType.Default;
-            // bool mouthEnabled = false;
-
-            // var easeInOutLength = 0.2;
-            // sum all clips
+            float value = 0f;
+            var isOnClip = false;
             for (int i = 0; i < Clips.Length; i++)
             {
 
@@ -59,10 +55,10 @@ namespace CharacterAnimationEssentials.Facial
                 var clipAsset = clip.asset as FacialClip;
                 var behaviour = clipAsset.behaviour;
                 var clipWeight = playable.GetInputWeight(i);
-                var clipProgress = (float)((time - clip.start) / clip.duration);
+                var clipProgress = Mathf.Clamp((float)((time - clip.start) / clip.duration),0f,1f);
 
                 // if inside of clip
-                if(0f <= clipProgress && clipProgress <= 1f)
+                if (clip.start<Director.time && Director.time <= clip.end) 
                 {
                 
                     if(clipProgress < behaviour.easeInOutLength)
@@ -82,10 +78,23 @@ namespace CharacterAnimationEssentials.Facial
 
                     behaviour.preset.value = value;
                     UpdateFacial(behaviour);
+                    isOnClip = true;
+                    
+                }
+                if (Director.time > clip.end && behaviour.preset.value != 0f ||
+                    Director.time < clip.start && behaviour.preset.value != 0f )
+                {
+                    behaviour.preset.value = 0f;
+                    UpdateFacial(behaviour);
                 }
                 
             }
 
+
+            if (!isOnClip)
+            {
+                ResetFace();
+            }
             // binding.faceType = faceType;
             // binding.value = value;   -=
             
@@ -93,18 +102,34 @@ namespace CharacterAnimationEssentials.Facial
             
             // binding.mouthEnabled = mouthEnabled;
         }
-        
+
+        public void ResetFace()
+        {
+            if (binding != null)
+            {
+                for (int i = 0; i < binding.BlendshapeNum; i++)
+                {
+                    binding.face.SetBlendShapeWeight(i, 0);
+                }   
+            }
+        }
         public void UpdateFacial(FacialBehaviour behaviour)
         {
             var preset = behaviour.preset;
             
-            // int faceBlandshapeNum = binding.faceMesh.blendShapeCount;        
-            // for (int i = 0; i < faceBlandshapeNum; i++)
-            // {
-            //     binding.face.SetBlendShapeWeight(i, 0);
-            // }=0=0====--==00=0=0=0=09kwakami===---==
-            // Debug.Log($"<color=blue>name: {preset.name}</color>");
-            // Debug.Log($"<color=red>size: {preset.targetBlendshapePairs.Count}</color>");==-8888===---    
+            // recreate blendshape value array when the number of blendshape is changed.
+            if (prevBlendshapeNum != binding.BlendshapeNum)
+            {
+                blendshapeValues = new float[binding.BlendshapeNum];
+                prevBlendshapeNum = binding.BlendshapeNum;
+            }
+
+
+            // initialize blendshapes
+            for (int i = 0; i < binding.BlendshapeNum; i++)
+            {
+                blendshapeValues[i] = 0;
+            }
             var count = 0;
 
             foreach (var blendShape in  preset.targetBlendshapePairs)
@@ -118,6 +143,10 @@ namespace CharacterAnimationEssentials.Facial
                     if (behaviour.useMouth)
                     {
                         binding.face.SetBlendShapeWeight(blendShape.Index, blendShape.MaxValue * preset.value);
+                    }
+                    else
+                    {
+                        binding.face.SetBlendShapeWeight(blendShape.Index, 0f);
                     }
                 }
                 else
