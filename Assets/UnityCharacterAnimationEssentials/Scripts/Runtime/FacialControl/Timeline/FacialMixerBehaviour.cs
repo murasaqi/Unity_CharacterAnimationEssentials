@@ -81,12 +81,12 @@ namespace CharacterAnimationEssentials.Facial
                     isOnClip = true;
                     
                 }
-                if (Director.time > clip.end && behaviour.preset.value != 0f ||
-                    Director.time < clip.start && behaviour.preset.value != 0f )
-                {
-                    behaviour.preset.value = 0f;
-                    UpdateFacial(behaviour);
-                }
+                // if (Director.time > clip.end && behaviour.preset.value != 0f ||
+                //     Director.time < clip.start && behaviour.preset.value != 0f )
+                // {
+                //     behaviour.preset.value = 0f;
+                //     UpdateFacial(behaviour);
+                // }
                 
             }
 

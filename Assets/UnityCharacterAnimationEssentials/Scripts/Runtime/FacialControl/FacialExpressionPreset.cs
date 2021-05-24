@@ -13,7 +13,7 @@ namespace CharacterAnimationEssentials.Facial
 
         public string facialName;
         public float value;
-
+        
         public List<BlendshapeNameIndexMaxValuePair> targetBlendshapePairs;
 
     }
